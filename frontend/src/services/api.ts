@@ -66,17 +66,6 @@ export interface MusicProject {
   assets: GeneratedAsset[];
 }
 
-export interface PlanDetail {
-  id: string;
-  name: string;
-  tagline: string;
-  price_usd: number;
-  price_inr: number;
-  billing_period: string;
-  credits_per_month: number;
-  features: string[];
-  recommended: boolean;
-}
 
 // API Methods
 export const api = {
@@ -110,13 +99,6 @@ export const api = {
     apiClient.patch<MusicProject>(`/projects/${id}`, data),
   deleteProject: (id: string) => apiClient.delete(`/projects/${id}`),
 
-  // Billing
-  getPlans: () => apiClient.get<PlanDetail[]>('/billing/plans'),
-  checkout: (data: { plan_id: string; provider: string }) =>
-    apiClient.post<{ order_id: string; amount: number; currency: string; key_id: string }>(
-      '/billing/checkout',
-      data
-    ),
 
   // Usage
   getUsage: () =>

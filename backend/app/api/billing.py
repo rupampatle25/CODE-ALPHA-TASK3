@@ -9,7 +9,7 @@ from app.models.models import User, UsageRecord
 from app.schemas.schemas import PlanDetail, CheckoutRequest, CheckoutResponse
 from app.api.auth import get_current_user
 
-router = APIRouter(prefix="/billing", tags=["Billing & Monetization"])
+router = APIRouter(prefix="/billing", tags=["Billing"])
 
 PLANS: List[PlanDetail] = [
     PlanDetail(

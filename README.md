@@ -30,9 +30,9 @@
 
 ---
 
-### 3. Studio Features & Commercial Plans
-![Sargam AI Features and Pricing](screenshots/03_features_and_pricing.png)
-*Monetization engine with tiered credit allocation, commercial license exports, and feature matrix.*
+### 3. Diverse Musical Styles & Architecture
+![Sargam AI Features and Styles](screenshots/03_features_and_styles.png)
+*Support for Classical, Lo-Fi, Ambient, Cinematic, Electronic, and Jazz musical styles.*
 
 ---
 
@@ -227,16 +227,6 @@ python -m pytest backend/tests/ -v
 * `test_health_and_root`: API service health check.
 * `test_auth_workflow`: User registration, bcrypt password verification, and JWT Bearer token generation.
 * `test_billing_plans`: Free, Creator, and Pro plan tiers and credit allotments.
-
----
-
-## 💳 Commercialization & Monetization Model
-
-| Plan | Price | Monthly Credits | Max Track Length | Features |
-| :--- | :--- | :--- | :--- | :--- |
-| **Free Tier** | Free | 10 Tracks | 30 seconds | Standard MIDI & WAV download |
-| **Creator Studio** | $15 / ₹999 | 250 Tracks | 120 seconds | Commercial usage rights, all genres |
-| **Pro Composer** | $39 / ₹2,999 | 1,000 Tracks | 300 seconds | Priority GPU queue, stem separation & REST API access |
 
 ---
 
